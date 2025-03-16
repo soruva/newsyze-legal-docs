@@ -24,5 +24,7 @@ You have the right to decide whether to accept or reject cookies. You can exerci
 We may update this Cookie Policy from time to time. When we make changes, we will update the "Last updated" date at the top of this policy.
 
 ## 6. Contact Us
-If you have any questions about our Cookie Policy, you can contact us at:  
-support@soruvalab.com
+If you have any questions about this Cookie Policy, please refer to our app’s FAQ section first.  
+For other inquiries, you may contact us at: support@soruvalab.com.  
+Please note that we may not be able to respond to all inquiries individually.
+
