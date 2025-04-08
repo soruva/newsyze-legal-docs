@@ -6,82 +6,123 @@
   <title>FAQ – SoruvaLab</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: auto;
-      padding: 30px;
-      line-height: 1.6;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 40px;
+      background-color: #ffffff;
+      color: #333;
     }
+
     h1 {
-      color: #1A237E;
-      font-size: 32px;
-      margin-bottom: 20px;
-    }
-    .faq-item {
-      border-bottom: 1px solid #ddd;
-      padding: 16px 0;
-    }
-    .faq-item:last-child {
-      border: none;
-    }
-    .question {
-      font-weight: bold;
-      font-size: 18px;
       color: #0D47A1;
+      margin-bottom: 32px;
     }
-    .answer {
-      margin-top: 6px;
+
+    .faq-item {
+      display: flex;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+      margin-bottom: 24px;
+    }
+
+    .faq-bar {
+      width: 6px;
+      background-color: #1E88E5;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+
+    .faq-content {
+      padding: 16px;
+    }
+
+    .faq-question {
+      font-size: 18px;
+      font-weight: bold;
+      color: #0D47A1;
+      margin-bottom: 8px;
+    }
+
+    .faq-answer {
+      font-size: 16px;
       color: #444;
+      line-height: 1.5;
     }
   </style>
 </head>
 <body>
-
   <h1>Frequently Asked Questions (FAQ)</h1>
 
   <div class="faq-item">
-    <div class="question">Is this app free to use?</div>
-    <div class="answer">Basic features are free, but some premium content may require a purchase.</div>
+    <div class="faq-bar"></div>
+    <div class="faq-content">
+      <div class="faq-question">Is this app free to use?</div>
+      <div class="faq-answer">Basic features are free, but some premium content may require a purchase.</div>
+    </div>
   </div>
 
   <div class="faq-item">
-    <div class="question">How is news collected?</div>
-    <div class="answer">News is gathered automatically using AI and updated frequently.</div>
+    <div class="faq-bar"></div>
+    <div class="faq-content">
+      <div class="faq-question">How is news collected?</div>
+      <div class="faq-answer">News is gathered automatically using AI and updated frequently.</div>
+    </div>
   </div>
 
   <div class="faq-item">
-    <div class="question">How accurate is AI summarization?</div>
-    <div class="answer">AI-generated summaries are for reference only and may not always be fully accurate.</div>
+    <div class="faq-bar"></div>
+    <div class="faq-content">
+      <div class="faq-question">How accurate is AI summarization?</div>
+      <div class="faq-answer">AI-generated summaries are for reference only and may not always be fully accurate.</div>
+    </div>
   </div>
 
   <div class="faq-item">
-    <div class="question">Do you offer support?</div>
-    <div class="answer">We do not offer individual support. Most common questions are answered in this FAQ.</div>
+    <div class="faq-bar"></div>
+    <div class="faq-content">
+      <div class="faq-question">Do you offer support?</div>
+      <div class="faq-answer">We do not offer individual support. Most common questions are answered in this FAQ.</div>
+    </div>
   </div>
 
   <div class="faq-item">
-    <div class="question">What if the app is not working?</div>
-    <div class="answer">Check for updates or restart the app.</div>
+    <div class="faq-bar"></div>
+    <div class="faq-content">
+      <div class="faq-question">What if the app is not working?</div>
+      <div class="faq-answer">Check for updates or restart the app.</div>
+    </div>
   </div>
 
   <div class="faq-item">
-    <div class="question">Where can I check the Terms & Privacy Policy?</div>
-    <div class="answer">You can find them in the Settings screen or on our official website.</div>
+    <div class="faq-bar"></div>
+    <div class="faq-content">
+      <div class="faq-question">Where can I check the Terms & Privacy Policy?</div>
+      <div class="faq-answer">You can find them in the Settings screen or on our official website.</div>
+    </div>
   </div>
 
   <div class="faq-item">
-    <div class="question">How can I opt out of cookies?</div>
-    <div class="answer">You can adjust your preferences via the cookie consent banner or your browser settings.</div>
+    <div class="faq-bar"></div>
+    <div class="faq-content">
+      <div class="faq-question">How can I opt out of cookies?</div>
+      <div class="faq-answer">You can adjust your preferences via the cookie consent banner or your browser settings.</div>
+    </div>
   </div>
 
   <div class="faq-item">
-    <div class="question">How do you handle analytics and tracking?</div>
-    <div class="answer">We use Firebase Analytics to collect anonymized usage data. No personally identifiable information is tracked or stored.</div>
+    <div class="faq-bar"></div>
+    <div class="faq-content">
+      <div class="faq-question">How do you handle analytics and tracking?</div>
+      <div class="faq-answer">We use Firebase Analytics to collect anonymized usage data. No personally identifiable information is tracked or stored.</div>
+    </div>
   </div>
 
   <div class="faq-item">
-    <div class="question">How can I opt out of data tracking?</div>
-    <div class="answer">You can opt out by submitting a request via our <a href="https://forms.gle/CrMzjup89jqEn9Dm6" target="_blank">Google Form</a>.</div>
+    <div class="faq-bar"></div>
+    <div class="faq-content">
+      <div class="faq-question">How can I opt out of data tracking?</div>
+      <div class="faq-answer">You can opt out by submitting a request via our Google Form, linked from the Privacy Policy and in-app FAQ section.</div>
+    </div>
   </div>
 
 </body>
