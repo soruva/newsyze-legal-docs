@@ -1,5 +1,5 @@
 # Cookie Policy
-_Last updated: May 04, 2025_
+_Last updated: Sep 17, 2025_
 
 This Cookie Policy explains how SoruvaLab ("we", "our", or "us") uses cookies and similar technologies to recognize you when you visit our website or use our app. It explains what these technologies are, why we use them, and your rights to control their use.
 
