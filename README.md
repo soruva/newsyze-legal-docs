@@ -2,7 +2,7 @@
 
 Official legal documentation for **Newsyze – AI News, Learning & Multilingual Summary App**.
 
-This repository hosts all public-facing legal pages used in the **Newsyze** app and on Google Play.
+This repository hosts all public-facing legal pages used in the **Newsyze** app and on Google Play.  
 Each document is published via **GitHub Pages** and linked directly from the in-app Legal Center.
 
 ---
@@ -52,3 +52,23 @@ sed -i 's/Sep 24, 2025/Oct 13, 2025/g' /workspaces/newsyze-legal-docs/{terms.htm
 
 # Preview the affected lines
 grep "Last updated" /workspaces/newsyze-legal-docs/*.html
+````
+
+Always commit and push after updates:
+
+```bash
+git add .
+git commit -m "Update Last updated date to Oct 13, 2025"
+git push origin main
+```
+
+---
+
+## 🪪 License & Attribution
+
+© 2025 **SoruvaLab**.
+All documents in this repository are intended for public compliance use within the **Newsyze** application.
+Unauthorized redistribution or misrepresentation of these materials is prohibited.
+
+**Maintained by:**
+📧 **[support@soruvalab.com](mailto:support@soruvalab.com)**
