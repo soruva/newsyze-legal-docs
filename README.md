@@ -34,7 +34,7 @@ All AI features are designed for educational purposes only.
 
 ## ⚖️ Compliance Notes
 
-- **Last updated:** November 19, 2025  
+- **Last updated:** November 24, 2025  
 - Fully aligned with Google Play’s *Privacy Policy* and *Data Safety* requirements.  
 - No personal or financial data is collected, shared, or transmitted to external servers.  
 - All processing (AI summaries, translations) occurs via trusted APIs under strict usage limits.  
