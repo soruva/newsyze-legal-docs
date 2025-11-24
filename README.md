@@ -1,74 +1,196 @@
-# 🧾 Newsyze Legal Documents
+# 🌐 Newsyze – Multilingual AI News & Learning App  
+### Learn Languages Through Real-World News. Fast. Smart. Beautiful.
 
-Official legal documentation for **Newsyze – AI News, Learning & Multilingual Summary App**.
+Newsyze is an AI-powered multilingual news reader designed for **language learners, global professionals, and curious readers**.  
+Read worldwide news, get instant AI summaries, translate into 5 languages, save vocabulary, track streaks, earn badges — all inside one minimal app.
 
-This repository hosts all public-facing legal pages used in the **Newsyze** app and on Google Play.  
-Each document is published via **GitHub Pages** and linked directly from the in-app Legal Center.
-
----
-
-## 📂 Structure
-
-| File | Purpose | Published URL |
-|------|----------|----------------|
-| `privacy-policy.html` | User data, AI usage, and privacy compliance | https://soruva.github.io/newsyze-legal-docs/privacy-policy.html |
-| `terms.html` | Terms of use and user responsibilities | https://soruva.github.io/newsyze-legal-docs/terms.html |
-| `faq.html` | Common questions and clarifications | https://soruva.github.io/newsyze-legal-docs/faq.html |
-| `index.html` | Legal Center – links to all the above pages | https://soruva.github.io/newsyze-legal-docs/ |
+No login. No tracking. No ads.  
+Just smart learning.
 
 ---
 
-## 🧠 App Overview
+## 🚀 Features
 
-**Newsyze** is an AI-powered, multilingual news and learning app that combines:
-- 🧠 **AI Summaries:** concise key points for every article  
-- 🌍 **Translations:** English, Spanish, German, French, Portuguese  
-- 📚 **Vocabulary & Flashcards:** learn directly from what you read  
-- 🎯 **Gamified Streaks & Badges:** turn news reading into a habit  
-- 🔈 **Text-to-Speech:** pronunciation and listening practice  
-- 🔒 **Privacy-by-Design:** no login, no tracking, GDPR/CCPA compliant  
+### 🧠 **AI Summary (OpenAI/Gemini)**
+Every article comes with a clean, concise AI-generated summary.
 
-All AI features are designed for educational purposes only.
+### 🌍 **5 Languages Supported**
+- English (UI + content)
+- Spanish
+- French
+- German
+- Portuguese 
+
+UI switches instantly.  
+Translation engine supports full-article multilingual translation.
+
+### 📚 **Word Bank + Smart Vocabulary**
+Long-press any word → AI translation → saved to Word Bank.
+
+Includes:
+- Part of speech (auto-detected)
+- Source article tracking
+- “Mastered” toggles
+- Word review screen
+
+### 🔊 **Advanced TTS (Text-to-Speech)**
+- Speed slider  
+- Pitch slider  
+- High-quality voice toggle  
+- Auto-selects accurate voice per language  
+
+Perfect for pronunciation & listening practice.
+
+### 🎮 **Gamification: Streaks & Badges**
+Turn news reading into a daily habit.
+
+You earn badges for:
+- Article count (1, 10, 50, 100…)
+- Reading streaks (3, 7, 30, 100 days)
+- Premium unlock
+- Language milestones
+
+### 🎨 **Themes (Light / Dark / AMOLED / System)**
+Modern UI with:
+- Navy brand theme  
+- AMOLED pure-black  
+- Dynamic theme switching  
+
+### 🖼️ **Safe Pexels AI Image Filtering**
+Articles use safe, high-resolution images from Pexels.
+
+No unsafe content.  
+No unpredictable AI image calls.
+
+### ⚡ **Fast Caching & Offline Tolerance**
+- Hive-based smart caching  
+- 24-hour freshness windows  
+- Minimal API calls to stay fast & reduce load  
+
+### 🔒 **Privacy-First**
+- No login  
+- No analytics SDK  
+- No ads  
+- No external tracking  
+- All saved data stays local (Hive + SharedPreferences)
 
 ---
 
-## ⚖️ Compliance Notes
+## 📥 Install Newsyze
 
-- **Last updated:** November 24, 2025  
-- Fully aligned with Google Play’s *Privacy Policy* and *Data Safety* requirements.  
-- No personal or financial data is collected, shared, or transmitted to external servers.  
-- All processing (AI summaries, translations) occurs via trusted APIs under strict usage limits.  
-- Data is stored locally on the user’s device unless explicitly saved by the user.  
+Google Play Store:  
+https://play.google.com/store/apps/details?id=com.soruvalab.newsyze
+
+iOS version coming soon.
 
 ---
 
-## 🛠️ Maintenance
+## 📂 Repository Structure
 
-To update document timestamps or minor text edits:
+```
 
-```bash
-# Update "Last updated" date in both key documents
-sed -i 's/Sep 24, 2025/Oct 13, 2025/g' /workspaces/newsyze-legal-docs/{terms.html,privacy-policy.html}
+/assets/i18n/          → 5-language translations
+/lib/models/           → Hive models (NewsArticle, WordModel)
+/lib/screens/          → UI screens
+/lib/services/         → AI, translation, caching, TTS, WordBank
+/lib/widgets/          → Shared UI components
+/theme.dart            → Brand theme + AMOLED theme
+/main.dart             → App root
 
-# Preview the affected lines
-grep "Last updated" /workspaces/newsyze-legal-docs/*.html
 ````
 
-Always commit and push after updates:
+---
+
+## ⚖️ Legal & Compliance
+
+All legal documents are hosted at:
+
+https://soruva.github.io/newsyze-legal-docs/
+
+| Document | URL |
+|---------|------|
+| **Privacy Policy** | https://soruva.github.io/newsyze-legal-docs/privacy-policy.html |
+| **Terms of Service** | https://soruva.github.io/newsyze-legal-docs/terms.html |
+| **FAQ** | https://soruva.github.io/newsyze-legal-docs/faq.html |
+| **Legal Center** | https://soruva.github.io/newsyze-legal-docs/ |
+
+### 🔐 Google Play Data Safety (Compliant)
+
+- **Collected:** None  
+- **Shared:** None  
+- **Stored locally:**  
+  - Word Bank vocabulary  
+  - Theme preferences  
+  - App language  
+  - Translation language  
+  - Streak & badge progress  
+- **Transmitted only on request:**  
+  - Article text → AI API (summary/translation)  
+- **No persistent user identifiers**  
+- **No analytics / tracking**  
+- **GDPR & CCPA aligned**
+
+---
+
+## 🛠️ Development
+
+### Install dependencies
 
 ```bash
-git add .
-git commit -m "Update Last updated date to Oct 13, 2025"
-git push origin main
+flutter pub get
+````
+
+### Generate splash/icons
+
+```bash
+flutter pub run flutter_native_splash:create
+flutter pub run flutter_launcher_icons:main
+```
+
+### Run the app
+
+```bash
+flutter run
+```
+
+### Release build for Android
+
+```bash
+flutter build appbundle --release
 ```
 
 ---
 
-## 🪪 License & Attribution
+## 📝 Updating Legal Docs
 
-© 2025 **SoruvaLab**.
-All documents in this repository are intended for public compliance use within the **Newsyze** application.
-Unauthorized redistribution or misrepresentation of these materials is prohibited.
+Documents live in a separate repo:
 
-**Maintained by:**
-📧 **[soruvalab@gmail.com](mailto:soruvalab@gmail.com)**
+```
+newsyze-legal-docs/
+```
+
+To update timestamps:
+
+```bash
+sed -i 's/Last updated:.*/Last updated: November 2025/g' ./*.html
+```
+
+Push to publish:
+
+```bash
+git add .
+git commit -m "Update legal docs"
+git push origin main
+```
+
+GitHub Pages updates instantly.
+
+---
+
+## 📧 Contact
+
+Maintained by **SoruvaLab**
+📩 [soruvalab@gmail.com](mailto:soruvalab@gmail.com)
+© 2025 SoruvaLab. All rights reserved.
+
+```
