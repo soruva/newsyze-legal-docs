@@ -11,24 +11,14 @@
       background-color: #ffffff;
       color: #333;
     }
-
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 24px;
-    }
-
-    h1 {
-      color: #0D47A1;
-      margin-bottom: 32px;
-    }
+    .container { max-width: 800px; margin: 0 auto; padding: 24px; }
+    h1 { color: #0D47A1; margin-bottom: 32px; }
 
     .faq-item {
       display: flex;
-      align-items: stretch;
       background-color: #f9f9f9;
       border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.04);
       margin-bottom: 24px;
     }
 
@@ -39,127 +29,158 @@
       border-bottom-left-radius: 8px;
     }
 
-    .faq-content {
-      padding: 16px;
-      flex: 1;
-    }
+    .faq-content { padding: 16px; flex: 1; }
+    .faq-question { font-size: 18px; font-weight: bold; color: #0D47A1; margin-bottom: 8px; }
+    .faq-answer { font-size: 16px; color: #444; line-height: 1.6; }
 
-    .faq-question {
-      font-size: 18px;
-      font-weight: bold;
-      color: #0D47A1;
-      margin-bottom: 8px;
-    }
-
-    .faq-answer {
-      font-size: 16px;
-      color: #444;
-      line-height: 1.6;
-    }
-
-    a {
-      color: #1E88E5;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
+    a { color: #1E88E5; text-decoration: none; }
+    a:hover { text-decoration: underline; }
   </style>
 </head>
+
 <body>
   <div class="container">
     <h1>Frequently Asked Questions (FAQ)</h1>
 
+    <!-- PRICING -->
     <div class="faq-item">
       <div class="faq-bar"></div>
       <div class="faq-content">
-        <div class="faq-question">Is this app free to use?</div>
+        <div class="faq-question">Is the app free to use?</div>
         <div class="faq-answer">
-          Basic summaries and selected news categories are free.<br/>
-          Full access to translations, flashcards, and TTS requires a premium plan.
+          Yes. You can read up to <strong>5 articles for free</strong> each day.<br/>
+          Premium unlocks:
+          <ul>
+            <li>Unlimited articles</li>
+            <li>AI translations (5 languages)</li>
+            <li>Advanced Text-to-Speech</li>
+            <li>Full Word Bank features</li>
+            <li>Ad-free experience</li>
+          </ul>
         </div>
       </div>
     </div>
 
+    <!-- NEWS SOURCE -->
     <div class="faq-item">
       <div class="faq-bar"></div>
       <div class="faq-content">
-        <div class="faq-question">How is news collected?</div>
+        <div class="faq-question">Where does the news come from?</div>
         <div class="faq-answer">
-          News articles are sourced from trusted global feeds and summarized by AI.<br/>
-          The app does not publish or edit original content.
+          News articles are provided through the <strong>GNews API</strong>, which aggregates headlines from worldwide publishers.<br/>
+          Images are retrieved using <strong>Safe Pexels Filtering</strong> to avoid unsafe content.
         </div>
       </div>
     </div>
 
+    <!-- AI SUMMARY -->
     <div class="faq-item">
       <div class="faq-bar"></div>
       <div class="faq-content">
-        <div class="faq-question">How accurate is AI summarization?</div>
+        <div class="faq-question">How accurate are the AI summaries?</div>
         <div class="faq-answer">
-          AI-generated summaries are for educational and learning purposes only.<br/>
-          While generally reliable, they may occasionally differ from the original text.
+          Summaries are generated using trusted AI models and are designed for
+          <strong>learning and educational purposes only</strong>.<br/>
+          They simplify content and may not always match the full original article.
         </div>
       </div>
     </div>
 
+    <!-- WORD BANK -->
     <div class="faq-item">
       <div class="faq-bar"></div>
       <div class="faq-content">
-        <div class="faq-question">Do you offer support?</div>
+        <div class="faq-question">What is the Word Bank?</div>
         <div class="faq-answer">
-          This app is developed and maintained by an independent developer.<br/>
-          Individual customer support is not guaranteed.<br/>
-          You can submit inquiries or feedback via our 
-          <a href="https://forms.gle/CrMzjup89jqEn9Dm6" target="_blank">support form</a>,<br/>
-          or contact us directly at <strong>soruvalab@gmail.com</strong>.<br/>
-          Submissions will be reviewed periodically, but response times may be limited.
+          Long-press any word to translate it instantly and save it to your personal
+          <strong>Word Bank</strong>.<br/>
+          Saved words are stored only on your device and can be marked as “mastered.”
         </div>
       </div>
     </div>
 
+    <!-- DATA + PRIVACY -->
     <div class="faq-item">
       <div class="faq-bar"></div>
       <div class="faq-content">
-        <div class="faq-question">What if the app is not working?</div>
+        <div class="faq-question">Do you collect personal data?</div>
         <div class="faq-answer">
-          Check for updates, restart the app, or reinstall if necessary.<br/>
-          Ensure that your device is connected to the internet.
+          No. Newsyze does not require login and does not collect personal information.<br/>
+          All preferences (languages, streak, saved words) remain only on your device.
         </div>
       </div>
     </div>
 
+    <!-- TTS -->
     <div class="faq-item">
       <div class="faq-bar"></div>
       <div class="faq-content">
-        <div class="faq-question">Where can I check the Terms & Privacy Policy?</div>
+        <div class="faq-question">Does the app support Text-to-Speech?</div>
         <div class="faq-answer">
-          You can find them anytime in the app’s Settings screen or on our
-          <a href="https://soruva.github.io/newsyze-legal-docs/" target="_blank">official Legal Center</a>.
+          Yes. TTS supports English, Spanish, French, German, and Portuguese.<br/>
+          You can adjust speed, pitch, and enable high-quality voices if your device supports them.
         </div>
       </div>
     </div>
 
+    <!-- TROUBLESHOOTING -->
     <div class="faq-item">
       <div class="faq-bar"></div>
       <div class="faq-content">
-        <div class="faq-question">Do you use cookies or tracking?</div>
+        <div class="faq-question">The app is not working. What should I do?</div>
         <div class="faq-answer">
-          At this time, we do not use cookies or tracking technologies within the app.<br/>
-          If this changes, our policies will be updated accordingly.
+          Try the following steps:
+          <ul>
+            <li>Check your internet connection</li>
+            <li>Update Newsyze to the latest version</li>
+            <li>Restart the app</li>
+            <li>Reinstall if issues continue</li>
+          </ul>
         </div>
       </div>
     </div>
 
+    <!-- TERMS -->
     <div class="faq-item">
       <div class="faq-bar"></div>
       <div class="faq-content">
-        <div class="faq-question">How can I request data deletion?</div>
+        <div class="faq-question">Where are the Terms and Privacy Policy?</div>
         <div class="faq-answer">
-          You can submit a request via our 
-          <a href="https://forms.gle/CrMzjup89jqEn9Dm6" target="_blank">Google Form</a>.<br/>
-          Providing your email is optional. Data removal is handled in accordance with our Privacy Policy.
+          You can find them on our Legal Center:<br/>
+          <a href="https://soruva.github.io/newsyze-legal-docs/" target="_blank">
+            https://soruva.github.io/newsyze-legal-docs/
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- DATA DELETION -->
+    <div class="faq-item">
+      <div class="faq-bar"></div>
+      <div class="faq-content">
+        <div class="faq-question">How can I delete my data?</div>
+        <div class="faq-answer">
+          Since your data is stored locally:
+          <ul>
+            <li>You can reset progress inside the app (if available), or</li>
+            <li>Delete the app from your device</li>
+          </ul>
+          You may also submit a request via:<br/>
+          <a href="https://forms.gle/CrMzjup89jqEn9Dm6" target="_blank">Data Request Form</a>.
+        </div>
+      </div>
+    </div>
+
+    <!-- SUPPORT -->
+    <div class="faq-item">
+      <div class="faq-bar"></div>
+      <div class="faq-content">
+        <div class="faq-question">Do you provide customer support?</div>
+        <div class="faq-answer">
+          Newsyze is developed by an independent creator.<br/>
+          Support is provided on a <strong>best-effort basis</strong> via:<br/>
+          <strong>soruvalab@gmail.com</strong><br/>
+          or the feedback form inside the app.
         </div>
       </div>
     </div>
